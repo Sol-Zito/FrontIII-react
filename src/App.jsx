@@ -1,11 +1,10 @@
 import "./App.css";
-import Pokemons from "./Pokemons/Pokemons";
+import FormPokemonFav from "./clase8/pokemonFav/FormPokemonFav";
 
 function App() {
   return (
     <>
-      <Pokemons type={"fire"}></Pokemons>
-      
+      <FormPokemonFav/>
     </>
   );
 }
