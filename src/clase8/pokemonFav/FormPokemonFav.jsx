@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import pokemonApi from "../../Pokemons/api/pokemons.json";
 
 const FormPokemonFav = () => {
   const [userData, setUserData] = useState({
@@ -6,6 +7,14 @@ const FormPokemonFav = () => {
     edad: "",
     pokemon: "",
   });
+
+  const validationPokemon = (pokemon) => {
+    const pokemons = pokemonApi["electric"];
+    const validPokemon = pokemons.some(
+      (elemento) => elemento.name.toLowerCase() == pokemon.toLowerCase()
+    );
+    return validPokemon;
+  };
 
   const validationName = (name) => {
     const nameWithoutSpace = name.trim();
@@ -30,12 +39,16 @@ const FormPokemonFav = () => {
     const pfav = e.target.pokemon.value;
     const nameValue = e.target.nombre.value;
     const ageValue = e.target.edad.value;
-
+    
+    const validPokemon = validationPokemon(pfav);
     const isNameValid = validationName(nameValue);
     const isAgeValid = validationAge(ageValue);
-    if (isNameValid && isAgeValid) {
+   
+    if (isNameValid && isAgeValid && validPokemon) {
       alert(`Hola ${nameValue} tu pokemon favorito es ${pfav}`);
-    } else {
+    } else if(!validPokemon && isNameValid && isAgeValid) {
+      alert(`${pfav} no existe`)
+    }else{
       alert("Alguno de los datos no son validos");
     }
   };

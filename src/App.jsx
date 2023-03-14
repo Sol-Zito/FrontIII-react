@@ -1,10 +1,10 @@
 import "./App.css";
-import FormPokemonFav from "./clase8/pokemonFav/FormPokemonFav";
+import Form from "./clase10/Form";
 
 function App() {
   return (
     <>
-      <FormPokemonFav/>
+      <Form/>
     </>
   );
 }
