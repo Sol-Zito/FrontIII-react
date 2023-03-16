@@ -1,10 +1,10 @@
 import "./App.css";
-import Form from "./clase10/Form";
+import EffectExample from "./clase14/EffectExample";
 
 function App() {
   return (
     <>
-      <Form/>
+      <EffectExample></EffectExample>
     </>
   );
 }

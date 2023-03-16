@@ -1,0 +1,40 @@
+{
+    "pizzas": [
+      {
+        "id": 1,
+        "name": "Napolitana",
+        "price": 1600,
+        "stock": 9,
+        "description": "tomate, queso mozzarella y salsa casera estilo italiana"
+      },
+      {
+        "id": 2,
+        "name": "Rafaello",
+        "price": 1400,
+        "stock": 16,
+        "description": "pepperoni, queso mozzarella y salsa casera estilo italiana"
+      },
+      {
+        "id": 3,
+        "name": "Krang",
+        "price": 1900,
+        "stock": 3,
+        "description": "pollo, dip salsa bbq , queso mozzarella y salsa casera estilo italiana"
+      },
+      {
+        "id": 4,
+        "name": "April",
+        "price": 1700,
+        "stock": 7,
+        "description": "tomates cherry, albahaca fresca, queso mozzarella y salsa casera estilo italiana"
+      },
+      {
+        "id": 5,
+        "name": "Donatello",
+        "price": 1700,
+        "stock": 7,
+        "description": "queso provolone, queso mozzarella y salsa casera estilo italiana"
+      }
+    ]
+  }
+  
